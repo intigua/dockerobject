@@ -260,15 +260,6 @@ class DockerObject(object):
     def wait_for_container(self):
         raise NotImplementedError()
 
-    def get_url(self):
-        pass
-
-    def browser(self):
-        url = self.get_url()
-        if not url:
-            raise RuntimeError("url is not valid")
-        os.system("xdg-open " + self.get_url())
-
 class RunCommandHelper(DockerObject):
 
     def __init__(self, command, linked=None, binds = None):
