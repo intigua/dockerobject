@@ -1,6 +1,11 @@
 # dockerobject
 Object oriented wrapper for docker-py.
 
+# Prerequisites
+You must have docker-py installed before you can use dockerobject.
+To install docker-py, do "git clone https://github.com/docker/docker-py.git", cd into docker-py, and run "python setup.py install"
+
+# Installation
 Install using:
     python setup.py install
 
